@@ -36,6 +36,10 @@ public class RunnerConfig {
     return head;
   };
 
+  public TreeNode getInput_104() {
+      return new TreeNode(0);
+  }
+
   public static RunnerConfig getInstance() {
     if (configInstance == null) {
       configInstance = new RunnerConfig();
@@ -51,5 +55,13 @@ public class RunnerConfig {
     ListNode(int x) {
       val = x;
     }
+  }
+
+  static public class TreeNode {
+    // For problem 104
+    int val;
+    public TreeNode left;
+    public TreeNode right;
+    TreeNode(int x) { val = x; }
   }
 }
