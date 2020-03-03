@@ -74,6 +74,7 @@ public class Prob36ValidateSudoku implements Runner {
 
     @Override
     public void perform() {
+      System.out.println("Problem 36:" + this.getClass().getName());
         System.out.println(isValidSudoku(RunnerConfig.getInstance().getInput_36()));
     }
 }
