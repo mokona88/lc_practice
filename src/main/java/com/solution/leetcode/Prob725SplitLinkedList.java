@@ -43,7 +43,6 @@ public class Prob725SplitLinkedList implements Runner {
     return list;
   }
 
-  @Override
   public void perform() {
     System.out.println("Problem 725:" + this.getClass().getName());
     ListNode[] splittedLinkList = splitListToParts(RunnerConfig.getInstance().getInput_725(), 3);
