@@ -25,3 +25,6 @@ hs_err_pid*
 # ide settings
 .idea
 *.iml
+
+# binary
+target
