@@ -36,6 +36,22 @@ public class RunnerConfig {
     return head;
   };
 
+  public ListNode getInput_19() {
+    int[] input = {1, 2, 3, 4, 5, 6, 7};
+    ListNode head = null, tail = null;
+    for (int val : input) {
+      if (tail == null) {
+        tail = new ListNode(val);
+        head = tail;
+      }
+      else {
+        tail.next = new ListNode(val);
+        tail = tail.next;
+      }
+    }
+
+    return head;
+  };
   public static RunnerConfig getInstance() {
     if (configInstance == null) {
       configInstance = new RunnerConfig();
