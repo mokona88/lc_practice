@@ -26,7 +26,6 @@ public class Prob5LongestPalindromicSubStringTest {
 
   @Test
   public void run() {
-    System.out.println("Test String: 01234567. Substring(2, 5) value is '" + "01234567".substring(2, 5) + "'." );
     for (Map.Entry entry : samples.entrySet()) {
       String result = prob5Instance.runSolution((String) entry.getKey());
       assertEquals(entry.getValue(), result);

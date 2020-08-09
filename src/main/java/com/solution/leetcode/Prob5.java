@@ -12,17 +12,7 @@ public class Prob5 {
     if (longestSubstring.length() > 0) { // empty cache before running
       longestSubstring = "";
     }
-    System.out.println("Input String: " + s);
-    if (s.length() < 2) {
-      return s;
-    }
-    if (s.length() == 2) {
-      if (s.charAt(0) != s.charAt(1)) {
-        return s.substring(0, 1);
-      } else {
-        return s;
-      }
-    }
+
     for (int index = 0; index < s.length() - 1; index++) {
       if (index > 0) { // odd palindromic substring starts with index = 1
         int oddDistance = 0;
